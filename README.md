@@ -87,9 +87,9 @@ There is one regex based trigger:
 
 Command | Description
 --- | ---
-`;q/{query}//` | Ask a query to ChatGPT.
+`;gpt <query>;` | Ask a query to ChatGPT.
 
-To use this command, replace `{query}` with your query in the `;q/{query}//` command. It is to be noted that Espanso has a very rigorous character limit and hence, the query should not exceed 28 characters
+To use this command, replace `{query}` with your query in the `;gpt <query>;` command. It is to be noted that Espanso has a very rigorous character limit and hence, the query should not exceed 28 characters
 
 
 ### Form Based Triggers
@@ -147,20 +147,8 @@ cd "$(espanso path config)/match/packages/openai/"
 
 ### Installation
 
-1. Download the installation script by running the following command in your terminal:
-    ```sh
-    curl -o chatgpt.sh https://raw.githubusercontent.com/rohitna/chatgpt-script/main/install.sh
-    ```
-
-2. Run the installation script
-    ```sh
-    bash chatgpt.sh
-    ```
-    The installation script will install the necessary dependencies and create a config file.
-
-3. Once the installation is complete, store your OpenAI API key in `~/esp-gpt/config.ini`.
-
-4. That's it, happy chatting with ChatGPT!
+1. Copy .env.example to .env and fill out the environment variables, especially openai_api_key.
+2. Install the requirements with ```pip install -r requirements.txt```
 
 
 ## FAQs

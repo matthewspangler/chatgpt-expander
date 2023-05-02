@@ -185,7 +185,7 @@ matches:
 
   # Regex based query
   # Low char limit because of Espanso's 30 character limit on regex.
-  - regex: ";;gpt (?P<query>.*);;"
+  - regex: ";gpt (?P<query>.*);"
     replace: "{{output}}"
     vars:
       - name: output
