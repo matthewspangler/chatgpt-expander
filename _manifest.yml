@@ -1,0 +1,6 @@
+name: "chatgpt-expander"
+title: "ChatGPT Expander"
+description: Get responses from ChatGPT with Espanso
+version: 0.1.0
+author: Matthew Spangler
+tags: ["AI", "ChatGPT"]
